@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    background-color: beige;
+}
+
+input, label {
+    float:left;
+}
+
+label {
+    width: 300px;
+    padding-right: 20px;
+    text-align: right;
+    clear: left;
+    padding-bottom: 20px;
+}
+
+input {
+    text-align: left;
+    width: 500px;
+}
+
+

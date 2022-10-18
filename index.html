@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Creation</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Some Website</h1>
+    </header>
+    <form action="./profile.html" method="get" id="form">
+      <fieldset>
+        <legend>Please Input Your Details to Create An Account</legend>
+        <label for="firstname">First Name: </label>
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          placeholder="Please enter your first name"
+        />
+        <p id="firstname-error"></p>
+        <label for="surname">Surname: </label>
+        <input
+          type="text"
+          name="surname"
+          id="surname"
+          placeholder="Please enter your surname"
+        />
+        <label for="username">Username: </label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Please choose a username"
+        />
+        <label for="avatar">Avatar URL: </label>
+        <input
+          type="url"
+          name="avatar"
+          id="avatar"
+          placeholder="Please enter a URL for your avatar image"
+        />
+      </fieldset>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
