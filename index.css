@@ -1,54 +1,143 @@
-body {
-    text-align: center;
-    background-color: beige;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0
 }
 
-.form {
+body {
+    opacity: 0.1;
+    transition: opacity 3s;
+}
+
+header {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Jost', sans-serif;
+    font-size: 50px;
+    align-self: center;
+}
+
+h2 {
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 0px 50px 0px;
+}
+
+.columns {
+    display: flex;
+    justify-content: center;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    height: 300px;
+    width: 150px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+}
+
+.errors {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px; 
+    position: absolute;
+    margin-left: 760px;
+}
+
+p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-self: center;
-    width: 500px;
+    height: 50px;
+    padding-left: 20px;
+    font-family: 'Jost', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: red;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+}
+
+input {
+    height: 50px;
+    width: 400px;
+    border: none;
+    background-color: #b2b2b2;
+    border-radius: 999px;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+input:hover {
+    background-color: lightgrey;
+    transition: 0.4s;
+    border-width: 1px;
+}
+
+input:focus {
+    outline: none;
+
+}
+
+.buttons-container {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 button {
     width: 100px;
-    display: flex;
+    height: 50px;
     align-self: center;
-    margin: 10px 0px 10px 0px;
+    margin: 0px 30px 0px 30px;
+    border: none;
+    background-color: #b2b2b2;
+    border-radius: 999px;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: lightgrey;
+    transition: 0.4s;
+    cursor: pointer;
 }
 
 .valid {
-    background-color: green;
+    border: 1px solid lightgreen;
+    transition: 0.4s;
 }
 
 .invalid {
-    background-color: red;
+    border: 1px solid red;
+    transition: 0.4s;
 }
-
-/* input, label {
-    float:left;
-}
-
-label {
-    width: 300px;
-    padding-right: 20px;
-    text-align: right;
-    clear: left;
-    padding-bottom: 20px;
-}
-
-input {
-    text-align: left;
-    width: 500px;
-}
-
-p {
-    float: left;
-    text-align: left;
-} */
-
 

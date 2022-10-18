@@ -13,7 +13,7 @@ firstNameInput.addEventListener("blur", (event) => {
   const firstName = event.target.value;
   const firstNameIsValid = firstName.length >= 3;
   if (!firstNameIsValid) {
-    firstNameError.innerText = "First name must be more than 2 letters";
+    firstNameError.innerText = "Must be more than 2 letters";
     event.target.classList.add("invalid");
     event.target.classList.remove("valid");
   } else {
@@ -27,7 +27,7 @@ surnameInput.addEventListener("blur", (event) => {
   const surname = event.target.value;
   const surnameIsValid = surname.length >= 3;
   if (!surnameIsValid) {
-    surnameError.innerText = "Surname must be more than 2 letters";
+    surnameError.innerText = "Must be more than 2 letters";
     event.target.classList.add("invalid");
     event.target.classList.remove("valid");
   } else {
@@ -46,7 +46,7 @@ usernameInput.addEventListener("blur", (event) => {
     event.target.classList.add("valid");
     event.target.classList.remove("invalid");
   } else {
-    usernameError.innerText = "Username must contain letters and numbers";
+    usernameError.innerText = "Must contain letters and numbers";
     event.target.classList.add("invalid");
     event.target.classList.remove("valid");
   }
@@ -65,7 +65,7 @@ avatarInput.addEventListener("blur", (event) => {
     event.target.classList.add("valid");
     event.target.classList.remove("invalid");
   } else {
-    avatarError.innerText = "Avatar must be a valid URL";
+    avatarError.innerText = "Must be a valid URL";
     event.target.classList.add("invalid");
     event.target.classList.remove("valid");
   }

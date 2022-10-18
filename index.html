@@ -4,60 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Account Creation</title>
+    <title>markSpace</title>
     <link rel="stylesheet" href="./index.css" />
     <script src="./index.js" defer></script>
   </head>
-  <body>
+  <body onload="document.body.style.opacity='1'">
     <header>
-      <h1>Some Website</h1>
+      <h1>markSpace</h1>
     </header>
-    <form action="./profile.html" method="get" id="form" class="form">
-      <fieldset>
-        <legend>Please Input Your Details to Create An Account</legend>
-        <label for="firstname">First Name: </label>
-        <input
-          type="text"
-          name="firstname"
-          id="firstname"
-          placeholder="Please enter your first name"
-          class="input-field"
-        />
-        <br />
-        <p id="firstname-error"></p>
-        <label for="surname">Surname: </label>
-        <input
-          type="text"
-          name="surname"
-          id="surname"
-          placeholder="Please enter your surname"
-          class="input-field"
-        />
-        <br />
-        <p id="surname-error"></p>
-        <label for="username">Username: </label>
-        <input
-          type="text"
-          name="username"
-          id="username"
-          placeholder="Please choose a username"
-          class="input-field"
-        />
-        <br />
-        <p id="username-error"></p>
-        <label for="avatar">Avatar URL: </label>
-        <input
-          type="url"
-          name="avatar"
-          id="avatar"
-          placeholder="Please enter a URL for your avatar image"
-          class="input-field"
-        />
-        <br />
-        <p id="avatar-error"></p>
-      </fieldset>
-      <button type="submit">Submit</button>
-      <button type="reset">Reset</button>
+    <h2>please input your details to create an account</h2>
+    <form action="./profile.html" method="get" id="form">
+      <div class="columns">
+        <div class="left-column">
+          <label for="firstname">First Name</label>
+          <label for="surname">Surname</label>
+          <label for="username">Username</label>
+          <label for="avatar">Avatar URL</label>
+        </div>
+        <div class="right-column">
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            class="input-field"
+          />
+          <input type="text" name="surname" id="surname" class="input-field" />
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="input-field"
+          />
+          <input type="url" name="avatar" id="avatar" class="input-field" />
+        </div>
+        <div class="errors">
+          <p id="firstname-error"></p>
+          <p id="surname-error"></p>
+          <p id="username-error"></p>
+          <p id="avatar-error"></p>
+        </div>
+      </div>
+      <div class="buttons-container">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
     </form>
   </body>
 </html>
