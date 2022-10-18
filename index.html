@@ -12,7 +12,7 @@
     <header>
       <h1>Some Website</h1>
     </header>
-    <form action="./profile.html" method="get" id="form">
+    <form action="./profile.html" method="get" id="form" class="form">
       <fieldset>
         <legend>Please Input Your Details to Create An Account</legend>
         <label for="firstname">First Name: </label>
@@ -21,7 +21,9 @@
           name="firstname"
           id="firstname"
           placeholder="Please enter your first name"
+          class="input-field"
         />
+        <br />
         <p id="firstname-error"></p>
         <label for="surname">Surname: </label>
         <input
@@ -29,21 +31,30 @@
           name="surname"
           id="surname"
           placeholder="Please enter your surname"
+          class="input-field"
         />
+        <br />
+        <p id="surname-error"></p>
         <label for="username">Username: </label>
         <input
           type="text"
           name="username"
           id="username"
           placeholder="Please choose a username"
+          class="input-field"
         />
+        <br />
+        <p id="username-error"></p>
         <label for="avatar">Avatar URL: </label>
         <input
           type="url"
           name="avatar"
           id="avatar"
           placeholder="Please enter a URL for your avatar image"
+          class="input-field"
         />
+        <br />
+        <p id="avatar-error"></p>
       </fieldset>
       <button type="submit">Submit</button>
       <button type="reset">Reset</button>

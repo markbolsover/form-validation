@@ -1,9 +1,30 @@
 body {
     text-align: center;
     background-color: beige;
+    display: flex;
+    justify-content: center;
 }
 
-input, label {
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
+
+button {
+    width: 100px;
+}
+
+.valid {
+    background-color: green;
+}
+
+.invalid {
+    background-color: red;
+}
+
+/* input, label {
     float:left;
 }
 
@@ -19,5 +40,10 @@ input {
     text-align: left;
     width: 500px;
 }
+
+p {
+    float: left;
+    text-align: left;
+} */
 
 
