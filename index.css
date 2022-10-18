@@ -3,17 +3,22 @@ body {
     background-color: beige;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-self: center;
     width: 500px;
 }
 
 button {
     width: 100px;
+    display: flex;
+    align-self: center;
+    margin: 10px 0px 10px 0px;
 }
 
 .valid {

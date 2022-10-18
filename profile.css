@@ -1,0 +1,12 @@
+body {
+    background-color: whitesmoke;
+}
+
+.dark-mode {
+    background-color:grey;
+    color: white;
+}
+
+img {
+    border-radius: 20%;
+}

@@ -11,3 +11,8 @@ document.getElementById("firstname").innerText = firstName;
 document.getElementById("surname").innerText = surname;
 document.getElementById("username").innerText = username;
 document.getElementById("avatar").src = avatar;
+
+function darkMode() {
+  const element = document.body;
+  element.classList.toggle("dark-mode");
+}
